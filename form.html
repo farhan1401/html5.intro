@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form <html></html></title>
+    <title>form html</title>
+    <style>
+        label{
+            display: block;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,6 +18,48 @@
     <main>
         <section>
             <h2>Please fill up the form</h2>
+            <form>
+                <label for="name"> Your Name:
+                    <input id="name" type="text" placeholder="Your name">
+                </label>
+                <label for="email"> Your email:
+                    <input type="email" name="" id="email" placeholder="Your email">
+                </label>
+                <label for="phone"> Your phone
+                    <input type="text" id="phone" placeholder="Your phone">
+                </label>
+
+                <fieldset>
+                    <legend>Pick one name</legend>
+                    <label for="Farhan"> 
+                        <input type="radio" name="Farhan" id="Farhan"> Farhan
+                    </label>
+                    <label for="Ontor">
+                        <input type="radio" name="Farhan" id="Ontor"> Ontor
+                    </label>
+                    <label for="Nirob">
+                        <input type="radio" name="Farhan" id="Nirob"> Nirob
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Pick one or more name</legend>
+                    <label for="Farhan">
+                        <input type="checkbox" name="Farhan" id="Farhan"> Farhan
+                        <label for="Ontor">
+                            <input type="checkbox" name="Farhan" id="Onator">Ontor
+                            <label for="Nirob">
+                                <input type="checkbox" name="Farhan" id="Nirob">Nirob
+                            </label>
+                        </label>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Special Instruction</legend>
+                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                </fieldset>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </form>
         </section>
     </main>
     <footer>
